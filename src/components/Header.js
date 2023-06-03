@@ -2,10 +2,11 @@ import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import StorefrontIcon from "@mui/icons-material/Storefront";
 import SearchIcon from "@mui/icons-material/Search";
 import React from "react";
+import "./Header.css";
 
 function Header() {
   return (
-    <div className="App">
+    <div className="header">
       <h1> App </h1>
       <div className="header__logo">
         <StorefrontIcon className="header__logoImage" fontSize="large" />
@@ -28,9 +29,9 @@ function Header() {
         </div>
         <div className="nav__item">
           <span className="nav__itemLineOne">
-            <ShoppingBasketIcon fontSize="large" />
+            <ShoppingBasketIcon className="itemBasket" fontSize="large" />
           </span>
-          <span className="nav__itemLineTwo">0</span>
+          <span className="nav__itemLineTwo itemBasket_counter">0</span>
         </div>
       </div>
     </div>
